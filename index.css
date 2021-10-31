@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Irish+Grover&family=Lato:ital@1&family=Nunito:ital,wght@0,400;1,300&family=Zen+Kurenaido&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fruktur&family=Irish+Grover&family=Lato:ital@1&family=Nunito:ital,wght@0,400;1,300&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dosis:wght@300&family=Fruktur&family=Irish+Grover&family=Lato:ital@1&family=Nunito:ital,wght@0,400;1,300&family=Zen+Kurenaido&display=swap');
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,7 +24,7 @@
     text-align:center;
     border: none;
     background-size: 300% 100%;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Courgette', cursive;
     border-radius: 50px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
