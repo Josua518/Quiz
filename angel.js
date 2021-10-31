@@ -26,11 +26,11 @@ continue_btn.onclick = ()=> {
   quiz_box.classList.add("activeQuiz"); //show quiz box
   showQuetions(0); //calling showQestions function
   queCounter(1); //passing 1 parameter to queCounter
-  startTimer(480); //calling startTimer function
+  startTimer(180); //calling startTimer function
   startTimerLine(0); //calling startTimerLine function
 }
 
-let timeValue = 480;
+let timeValue = 180;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -45,7 +45,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = ()=> {
   quiz_box.classList.add("activeQuiz"); //show quiz box
   result_box.classList.remove("activeResult"); //hide result box
-  timeValue = 480;
+  timeValue = 180;
   que_count = 0;
   que_numb = 1;
   userScore = 0;
@@ -153,12 +153,12 @@ function showResult() {
   quiz_box.classList.remove("activeQuiz"); //hide quiz box
   result_box.classList.add("activeResult"); //show result box
   const scoreText = result_box.querySelector(".score_text");
-  if (userScore > 3) {
+  if (userScore > 8) {
     // if user scored more than 3
     //creating a new span tag and passing the user score number and total question number
     let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
-  } else if (userScore > 1) {
+  } else if (userScore > 5) {
     // if user scored more than 1
     let scoreTag = '<span>and nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
     scoreText.innerHTML = scoreTag;
@@ -202,7 +202,7 @@ function startTimer(time) {
 }
 
 function startTimerLine(time) {
-  counterLine = setInterval(timer, 980);
+  counterLine = setInterval(timer, 350);
   function timer() {
     time += 1; //upgrading time value with 1
     time_line.style.width = time + "px"; //increasing width of time_line with px by time value
