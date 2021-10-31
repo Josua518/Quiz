@@ -15,7 +15,7 @@
 
 .btn-hover {
     width: 350px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -23,6 +23,7 @@
     height: 45px;
     text-align:center;
     border: none;
+    letter-spacing: 1px;
     background-size: 300% 100%;
     font-family: 'Courgette', cursive;
     border-radius: 50px;
